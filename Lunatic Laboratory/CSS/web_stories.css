@@ -1,0 +1,33 @@
+.bookshelf
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px 10px;
+}
+
+.books
+{
+    
+}
+
+.book
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding-left: 20px;
+
+    transition: 0.3s ease-in-out;
+}
+
+.book_title
+{
+
+}
+
+.book:hover
+{
+    background-color: crimson;
+}

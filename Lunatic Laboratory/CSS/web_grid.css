@@ -1,0 +1,165 @@
+
+
+/*Grid*/
+.header{grid-area: header;}
+.photo{grid-area: photo;}
+.sidebar{grid-area: sidebar;}
+.main{grid-area: main;}
+.right{grid-area: right;}
+.aside{grid-area: aside;}
+.footer{grid-area: footer;}
+.nav{grid-area: nav;}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'header header nav sidebar'
+    'main main main right'
+    'footer footer footer footer';
+    grid-gap: 20px;
+    
+/*#FFAE42, ffe2b2, ffcd55, ffd485*/
+    width: 75.2%;
+    height: auto;
+    border: 1px white solid;
+    border-radius: 30px 30px;
+    background-color: ivory;
+
+}
+
+/*
+.container > .main,
+.container > .footer,
+.container > .right,
+.container > .header,
+.container > .nav
+{
+    border: 3px solid;
+}
+*/
+.container > .main,
+.container > .sidebar,
+.container > .footer
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.container > .header
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 30px;
+}
+
+
+/*Grid Margins*/
+.container > .right,
+.container > .sidebar,
+.container > .footer
+{
+    margin-right: 20px;
+}
+
+
+.container > .footer,
+.container > .header,
+.container > .sidebar,
+.container > .nav
+{
+    margin-top: 20px;
+}
+
+.container > .header,
+.container > .main,
+.container > .footer
+{
+    margin-left: 20px;
+}
+
+.container > .footer
+{
+    margin-bottom: 20px;
+}
+
+/*Sidebar Grid*/
+.sidebar
+{
+    grid-area: sidebar;
+    gap: 18%;
+    border-left: 1px #afab76 solid;
+    border-right: 1px #afab76 solid;
+    border-top: 1px #666448 solid;
+    border-bottom: 1px #fffdda solid;
+    border-radius: 0 50px 0 0;
+    width: 87%;
+
+    justify-self: center;
+
+    background-color: aliceblue;
+}
+
+
+.right
+{
+    grid-area: right;
+    justify-self: center;
+}
+
+.main
+{
+    grid-area: main;
+}
+
+.header
+{
+    grid-area: header;
+    /*#F4BB44;*/
+
+}
+.nav
+{
+    grid-area: nav;
+    max-width: fit-content;
+    max-height: fit-content;
+    background-color: rgb(221, 221, 166);
+}
+
+
+.footer
+{
+    grid-area: footer;
+}
+
+@media(max-width: 768px)
+{
+    .container
+    {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        'header'
+        'main'
+        'sidebar'
+        'right'
+        'footer';
+    }
+}
+
+@media(max-width: 768px)
+{
+    .container > * 
+    {
+        margin: 2vw;
+    }
+}
+
+@media(max-width: 768px)
+{
+    .sidebar
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

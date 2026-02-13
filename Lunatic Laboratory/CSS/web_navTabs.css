@@ -1,0 +1,55 @@
+.nav-tabs 
+{
+    display: flex;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.nav-tabs .tab
+{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #170607;
+    background: white;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.nav-tabs .tab.active 
+{
+    background-color: lavender;
+
+}
+
+.tab-content
+{
+    padding: 10px;
+    display: none;
+}
+
+.tab-content.active
+{
+    display: block;
+}
+
+.tab-stories
+{
+    padding: 10px;
+    display: none;
+}
+
+.tab-stories.active
+{
+    display: block;
+}
+
+.tab-stories.slide-right
+{
+    transform: translateX(100%);
+}
+
+.tab-stories.slide-left
+{
+    transform: translateX(-100%);
+}

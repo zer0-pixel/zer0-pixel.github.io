@@ -1,0 +1,57 @@
+.head{grid-area: header;}
+.nav{grid-area: aside;}
+.main{grid-area: main;}
+.foot{grid-area: footer;}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: 1px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'header header header header header header'
+    'aside aside main main main main'
+    'aside aside main main main main'
+    'footer footer footer footer footer footer';
+
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #ff0090;
+    align-self: center;
+    margin: auto;
+
+    background-color: black;
+    color: white;
+}
+
+
+.grid > .main,
+.grid > .nav,
+.grid > .head
+{
+    padding-left: 20px;
+}
+/*Head*/
+.head
+{
+    border: 1px solid;
+}
+/*Main*/
+.main
+{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+/*Aside*/
+.nav
+{
+    padding: 20px;
+    border-left: 1px solid white;   
+}
+/*Footer*/
+.foot
+{
+    border: 1px solid white;
+    text-align: center;
+}
+
+
