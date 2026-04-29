@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" href="./ICONS/Favicons/fav.ico">
+        <title>Maintenance</title>
+        <style>
+            html, body{overflow: hidden; overflow-x: hidden; margin: 0; padding: 0;}
+            body
+            {
+                background-color: black;
+                justify-content: center;
+                margin: 0;
+                image-rendering: pixelated;
+                animation: flicker 0.15s infinite;
+            }
+            @keyframes flicker 
+            {
+                0% {filter: brightness(1);}
+                50% {filter: brightness(0.90);}
+                100% {filter: brightness(1);} 
+            }
+
+            .header{grid-area: header;}
+            .main{grid-area: main;}
+            .footer{grid-area: footer;}
+            .container
+            {
+                display: grid;
+                grid-template-columns: 100px 1fr;
+                grid-template-rows: auto ;
+                grid-template-areas: 
+                "main main";
+                width: 99%; 
+                height: 99vh;
+                justify-self: center;
+                justify-items: center;
+                border: 1px solid blueviolet;
+                margin-top: 0.2%;
+            }
+            .main
+            {
+                background-image: url('./Drawings/ASCII_zero_no_bckrnd.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 70%;
+
+                width: 80%;
+            
+                position: relative;
+                animation-name: glitch-5;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+
+            .main::after
+            {
+                background-image: url('./ICONS/END_color.png');
+                background-repeat: no-repeat;
+                background-position: 23% 25%;
+                background-size: 28%;
+                transform: rotate(-15deg);
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                content: '';
+            }     
+            
+            h2
+            {
+                color: red;
+                font-family:cursive;
+                font-size:xx-large;
+                font-weight: 300;
+                transform: rotate(4deg);
+                position: relative;
+                top: 5%;
+                text-shadow: 0 0 4px #ff7300
+            }
+
+           .icon
+            {
+                image-rendering: pixelated;
+                width: 64px;
+                height: 64px;
+                
+            }
+            .page
+            {
+                display: inline-block;
+                text-align: center;
+                transition: 0.1s ease-in-out;
+                background-color: ivory;
+                border-bottom: 3px solid rgb(175, 175, 130);
+                padding: 3px;
+                margin: 3px;
+                width: 64px;
+                height: 64px;
+                left: 4%;
+                position: absolute;
+            }
+
+            .page:hover
+            {
+                transform: translateY(-10%);
+                cursor: pointer;
+                color: midnightblue;
+                background-color:darksalmon;
+                box-shadow: 0 0 15px rgba(248, 160, 160, 0.5);
+                border-bottom: solid rgb(180, 81, 48);
+                image-rendering: pixelated;
+                cursor: none;
+            }
+                
+            p
+            {
+                font-family: cursive;
+                font-size: x-large;
+                font-weight: 300;
+                animation-name: glow;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                position: absolute;
+            }
+
+            @keyframes glow
+            {
+                0%{text-shadow: 0 0 8px #6d0000;}
+                25%{text-shadow: 0 0 8px #0004ff;}
+                50%{text-shadow: 0 0 8px #ff7300;}
+                100%{text-shadow: 0 0 8px #6d0000;}
+            }
+            .cursor-tail
+            {
+                position: absolute;
+                pointer-events: none;
+                transform: translate(50%, 80%);
+            }
+                
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="main">
+                
+                
+                <h2>Warning: <br><span style="text-decoration: underline;">Maintenance!</span></h2>
+                <p style="right: 97.5%; color: blue; transform: rotate(-15deg);">GO</p>
+                <a class="page" href="zero_Website.html">
+                    <img class="icon" src="./ICONS/home.png">
+                </a>
+                <p style=" left: 10%; color: orange; transform: rotate(15deg);">BACK</p>
+            </div>
+
+        </div>
+        <script src="./JS/cursor.js"></script>
+    </body>
+</html>
