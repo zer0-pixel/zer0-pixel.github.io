@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./CSS/standard.css">
+        <link rel="stylesheet" href="./CSS/web_grid.css">
+        <link rel="stylesheet" href="./CSS/web_navTabs.css">
+        <link rel="stylesheet" href="./CSS/web_Style.css">
+        <link rel="stylesheet" href="./CSS/web_icons.css">
+        <link rel="stylesheet" href="./CSS/web_stories.css">
+
+        <link rel="icon" href="./ICONS/Favicons/fav.ico">
+<!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&family=Press+Start+2P&display=swap" rel="stylesheet">
+        
+        <title>Lunatic</title>
+    </head>
+    <body>
+        
+        <div class="top-nav">
+                <div class="header">
+                    <img class="logo" src="./ICONS/logo.png">
+                    <h1>Lunatic Laboratory</h1>
+                </div>
+    <!--Navigation-->
+
+                <div class="nav">
+                        <a class="page" href="zero_Website.html">
+                            <img class="icon" src="./ICONS/home.png">
+                            <h5 id="side_Panels">Home</h5>
+                        </a>
+                        <a class="page" href="maintenance.html">
+                            <img class="icon" src="./ICONS/about.png">
+                            <h5 id="side_Panels">About</h5>
+                        </a>
+                        <a class="page" href="maintenance.html">
+                            <img class="icon" src="./ICONS/book.png">
+                            <h5 id="side_Panels">Library</h5>
+                        </a>
+                </div>
+
+                <div class="sidebar">
+                </div>
+            </div>
+
+        <div class="container" id="box-shade">
+<!---Photo-->
+            <!--<div class="photo">
+                <img id="img_1" src="./Zero5.jpg" width="100%">
+            </div>
+            -->
+            
+<!--Header-->
+            
+
+<!--Main-->
+            <div class="main">
+
+<!--Main container 1-->
+                <div class="main_Container_1">
+                    <div class="inborder">
+                        <span id="msgBoard" style="white-space: pre-line;"></span>
+                        <div id="New">
+                            <h3> What's New</h3>
+                            <p id="typing"></p>
+                        </div>
+                    </div>
+                </div>
+
+<!--Main container 2-->
+                <div class="main_Container_2">
+                    <div class="bookshelf">
+                        <h2 style="padding-left: 10px;">Library <img src="./ICONS/books.png"></h2>
+                        <span><hr color="black"></span>
+                        <h3 class="stories"><span>Presented Books: </span></h3>
+                        <dl class="books">
+                            <img class="book_img" src="./ICONS/about.png">
+                            <a class="book">
+                                <dt class="book_title" id="book" style="padding-left: 10px;"></dt>
+                                <details style="padding-top: 5px;" class="bookDetails">
+                                    <summary>Summary</summary>
+                                        <p class="sum">
+                                            <strong><em>Summary: </em></strong><br>
+                                            Human nature and mother nature is being forced to fundamentally change to catch up with advancing technology. In various ways,
+                                            the ideas and outcomes of the new found technology has become sinister to life, sparking a hidden war declared onto humanity.
+                                            Scientists and engineers built robots instructed to protect what can salvaged of humanity and to kill those who created the 
+                                            technology that will soon compromise and rule all of humanity. Zero, the protagonist and a robot girl, wakes up in a 
+                                            destroyed laboratory and later learns what's happening to humanity and the governing group behind it all.
+                                        </p>
+                                </details>
+                            </a>
+                            <img class="book_img" src="./ICONS/pumpkins.png">
+                            <a class="book">
+                                <dt class="book_title" id="book_2" style="padding-left: 10px;"></dt>
+                                <details style="padding-top: 5px;">
+                                    <summary>Summary</summary>
+                                        <p class="sum">
+                                            <strong><em>Summary:</em></strong><br>
+                                            
+                                            On October 31st, Halloween, a series of unfortunate events unravel onto a few young adults in Hollow Town.
+                                        </p>
+                                </details>
+                            </a>
+                            <img class="book_img" src="./Drawings/Notebook drawing.jpg">
+                            <a class="book">
+                                <dt class="book_title" id="book_3" style="padding-left: 10px;"></dt>
+                                <details style="padding-top: 5px;">
+                                    <summary>Summary</summary>
+                                    <p class="sum">Not Available</p>
+                                </details>
+                            </a>
+                            <span class="msg"> More stories soon </span>
+                            <hr color="black">    
+                        </dl>
+
+<!--Punctuation Index-->
+                        <h3 class="punct">Punctuation Index</h3>
+                        <div class="indexContainer">
+                            <div class="punctIndex" id="index_card">
+                                <div class="punctClass" style="border-bottom: 1px solid black;">
+                                    <h4 class="punctTitle">Period(.)</h4>
+                                    <p id="period"></p>
+                                </div>
+                                <div class="punctClass" style="border-bottom: 1px solid black;">
+                                    <h4 class="punctTitle">Question Mark(?)</h4>
+                                    <p id="question_mark"></p>
+                                </div>
+                                <div class="punctClass" style="border-bottom: 1px solid black;">
+                                    <h4 class="punctTitle">Exclamation Point(!)</h4>
+                                    <p id="exclamation_point"></p>
+                                </div>
+                                <div class="punctClass" style="border-bottom: 1px solid black;">
+                                    <h4 class="punctTitle">Apostrophe(')</h4>
+                                    <p id="apostrophe"></p>
+                                </div>
+                                <div class="punctClass" style="border-bottom: 1px solid black;">
+                                    <h4 class="punctTitle">Hyphen(-)</h4>
+                                    <p id="hyphen"></p>
+                                </div>
+                                <div class="punctClass" style="border-bottom: 1px solid black;">
+                                    <h4 class="punctTitle">Dash(--)</h4>
+                                    <p id="dash"></p>
+                                </div>
+                                <div class="punctClass" style="border-bottom: 1px solid black;">
+                                    <h4 class="punctTitle">Quotation Marks(&#8220;&#8221;)</h4>
+                                    <p id="quotation_marks"></p>
+                                </div>
+                                <div class="punctClass" style="border-bottom: 1px solid black;">
+                                    <h4 class="punctTitle">Comma(,), Colon(:), and Semicolon(;)</h4>
+                                    <p id="punct_trio"></p>
+                                </div>
+                                <div class="punctClass">
+                                    <h4 class="punctTitle">Ellipsis(...)</h4>
+                                    <p id="ellipsis"></p>
+                                </div>
+                            </div>
+                            <hr color="black">
+                            <img style="margin: auto; display: block; margin-bottom: 5px;" src="ICONS/END_color.png">
+                        </div>
+                    </div>
+                </div>
+
+<!--Main Container 3-->
+                <div class="main_Container_3">
+                </div>
+            </div>
+
+<!--Right-->
+            <div class="right">
+                <img class="season" src="./ICONS/event_Banner.png" >
+                <div class="image">
+                    <div class="tv">
+                        <canvas id="right_canvas">jkj</canvas>
+                    </div>
+                <p class="cursive center">Animation</p>
+                <details>
+                    <summary class="ani_desc">About</summary>
+                    <p class="animation">Made on the 3DS.</p>
+                </details>
+                </div>
+                
+                <div class="window">
+                    <p class="cursive"><img>Links</p>
+                    <div id="link">
+                        <a href="https://www.youtube.com/@zero00000-g">
+                            <h4>Youtube</h4>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="window">
+                </div>
+            </div>
+
+
+<!--Footer-->
+            <div class="footer">
+                <hr width="1200" color="black">
+                <h5>@2025 - 2026</h5>
+            </div>
+
+        </div>
+
+<!--JavaScript-->
+        <script src="./JS/Bookshelf.js"></script>
+        <script src="./JS/update_Announcement.js"></script>
+        <script src = "./JS/container_Tabs.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/gifler@0.1.0/gifler.min.js"></script>
+        <script src="./JS/cursor.js"></script>
+        <script>
+            const GIF = document.querySelector('#right_canvas');
+            GIF.width  = GIF.offsetWidth;
+            GIF.height = GIF.offsetHeight;
+
+            let frames = 13;
+
+            function onDrawFrame(ctx, frame) {
+                ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+                
+                const gifWidth= 320;
+                const gifHeight = 240;
+                const x = (ctx.canvas.width - gifWidth) / 2;
+                const y = (ctx.canvas.height - gifHeight) / 2;
+                ctx.globalCompositeOperation = 'source-over';
+                ctx.drawImage(frame.buffer, frame.x, frame.y, gifWidth, gifHeight);
+
+                /*30%, 50%, 0.5 rainbow color*/
+                /*const hue = (frames * 10 + x * 50) % 360; rainbow hue*/
+                /*const hue = ( Math.sin(frames / 30 + x / 10)) * 20; honey hue*/
+                const hue = (Math.sin(frames / 60 + x / 10) * 180 + 180) % 360;
+                ctx.globalCompositeOperation = 'source-atop';
+                ctx.fillStyle = `hsla(${hue}, 30%, 50%, 0.5)`;
+                ctx.fillRect(x, y, gifWidth, gifHeight);
+                
+
+                frames++;
+            }
+            
+                
+            gifler('./GIFS/Emilia.gif').get(function(anim) {
+            anim.onDrawFrame = onDrawFrame;
+            anim.animateInCanvas(GIF);
+            });
+
+        </script>
+
+<!--Body end-->
+    </body>
+</html>
