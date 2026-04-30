@@ -39,7 +39,7 @@ function text()
 
 function messageBoard()
 {
-    const welcome = `${"=".repeat(70)}\nWelcome\n${"=".repeat(70)}`;
+    const welcome = `${"=".repeat(70)}\nWhat's New!\n${"=".repeat(70)}`;
     const msgBoard = document.getElementById('msgBoard');
     msgBoard.textContent += welcome;
 }
