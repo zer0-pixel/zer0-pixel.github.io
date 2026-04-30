@@ -23,7 +23,7 @@ function text()
             {
                 text.textContent += currentText[char];
                 char++;
-                setTimeout(typing, 30);
+                setTimeout(typing, 10);
             }
             else
             {
@@ -39,7 +39,7 @@ function text()
 
 function messageBoard()
 {
-    const welcome = `${"=".repeat(70)}\nWhat's New!\n${"=".repeat(70)}`;
+    const welcome = `${"=".repeat(38)}\nWhat's New!\n${"=".repeat(40)}`;
     const msgBoard = document.getElementById('msgBoard');
     msgBoard.textContent += welcome;
 }
