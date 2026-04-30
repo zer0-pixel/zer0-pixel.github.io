@@ -35,6 +35,7 @@
     image-rendering: pixelated;
     overflow-y: scroll;
     resize: vertical;
+    justify-self: center;
 }
 
 
