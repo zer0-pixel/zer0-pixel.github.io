@@ -112,7 +112,7 @@ function punctuationIndex()
 //END//
 
 // Custom cursor
-function cursor()
+function cursor(size)
 {
     document.querySelectorAll('.cursor').forEach(el => el.remove());
 
@@ -122,6 +122,8 @@ function cursor()
     cursor.src = "./GIFS/cursor.gif";
     cursor.style.position = "absolute";
     cursor.style.pointerEvents = "none";
+    cursor.style.width = size + "px";
+    cursor.style.height = size + "px";
     document.body.appendChild(cursor);
 
     document.addEventListener("mousemove", e =>
@@ -184,8 +186,9 @@ function cursorTail(src, count = 8, size = 40, easing = 1)
 }
 
 //Custom Cursor / Tail
-cursor();
-cursorTail("./GIFS/plus.gif", 8, 30, 0.1);
+cursor(22);
+cursorTail("./GIFS/plus.gif", 8, 22, 0.1);
+
 
 //Bookshelf
 displayBook();
