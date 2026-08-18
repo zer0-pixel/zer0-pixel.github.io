@@ -2,7 +2,8 @@
 html
 {
     max-width: auto;
-    max-height: 2000vh;
+    max-height: auto;
+    height: fit-content;
     background-image: url(/web_design/tiles.png);
     background-repeat: repeat;
 }
@@ -14,8 +15,9 @@ body
     
     min-height: max-content;
     background-color: var(--bg-color);
-    height: 200vh;
+    height: 400vh;
     margin: 0;
+
 }
 
 html, body{overflow-x: hidden;}
@@ -26,10 +28,11 @@ html, body{overflow-x: hidden;}
     max-height: fit-content;
     float: left;
     overflow: hidden;
-    background-color: peachpuff;
+    background-color: rgb(255, 155, 67);
     display: flex;
     flex-direction: row;
     padding-top: 10px;
+    box-shadow: 0px 5px black;
 }
 
 .header
